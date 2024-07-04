@@ -1,0 +1,41 @@
+.BackDrop{
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.8s;
+}
+.Overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 30%;
+    /* height: 400px; */
+    padding: 20px 15px;
+    background-color: white;
+    z-index: 1001;
+    border-radius: 20px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.showBackDrop{
+    visibility: visible;
+    opacity: 0.8;
+    /* transition: 0.8s; */
+}
+.showOverlay{
+    visibility: visible;
+    opacity: 1;
+    /* transition: 0.4s; */
+}
+
+
+
